@@ -9,12 +9,6 @@ namespace ApiStarWars.Repositories
         private readonly HttpClient _httpClient;
         private const string ApiUrl = "https://akabab.github.io/starwars-api/api/all.json";
 
-        //private static readonly JsonSerializerOptions JsonOptions = new()
-        //{
-        //    PropertyNameCaseInsensitive = true,
-        //    DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
-        //    Converters = { new JsonStringEnumConverter() }
-        //};
         public StarWarsRepository(HttpClient httpClient)
         {
             _httpClient = httpClient;
