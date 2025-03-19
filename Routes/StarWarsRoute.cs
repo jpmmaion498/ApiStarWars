@@ -8,9 +8,9 @@ namespace ApiStarWars.Routes
     {
         public static void StarWarsRoutes(this WebApplication app)
         {
-            var route = app.MapGroup("StarWars");
+            var route = app.MapGroup("starwars");
 
-            route.MapGet("/starwars/characters", async (
+            route.MapGet("/characters", async (
             [FromServices] StarWarsService starWarsService,
             [FromQuery] string? name,
             [FromQuery] string? gender,
